@@ -14,6 +14,6 @@ const contains = (item, list, cb = x => { return x }) => {
     return cb(false);    
 };
 
-console.log('Loaded');
-console.log(contains('x', '<ukljh;lojhhje')); // false
-console.log(contains('x', '<ukljh;xlojhhje'));
+$('#result').append('Loaded');
+$('#result').append(contains('x', '<ukljh;lojhhje') ? 'Yes x found' : 'No x found'); // false
+$('#result').append(contains('x', '<ukljh;xlojhhje') ? 'Yes x found' : 'No x found' );
