@@ -14,7 +14,10 @@ const contains = (item, list, cb = x => { return x }) => {
     return cb(false);    
 };
 (() => {
-document.getElementById('result').append((document.createTextNode("Loaded")) + document.createElement("br"));
-document.getElementById('result').append(contains('x', '<ukljh;lojhhje') ? (document.createTextNode('Yes x found')) + document.createElement("br") : (document.createTextNode('No x found')) + document.createElement("br")); // false
-document.getElementById('result').append(contains('x', '<ukljh;xlojhhje') ? (document.createTextNode('Yes x found')) + document.createElement("br") : (document.createTextNode('No x found')) + document.createElement("br"));
+document.getElementById('result').append((document.createTextNode("Loaded")));
+document.getElementById('result').append(document.createElement("br"));    
+document.getElementById('result').append(contains('x', '<ukljh;lojhhje') ? (document.createTextNode('Yes x found')) : (document.createTextNode('No x found'))); // false
+document.getElementById('result').append(document.createElement("br"));    
+document.getElementById('result').append(contains('x', '<ukljh;xlojhhje') ? (document.createTextNode('Yes x found')) : (document.createTextNode('No x found')));
+document.getElementById('result').append(document.createElement("br"));    
 })();
