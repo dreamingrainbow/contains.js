@@ -14,7 +14,7 @@ const contains = (item, list, cb = x => { return x }) => {
     return cb(false);    
 };
 (() => {
-document.getElementById('result').append('Loaded</br>');
-document.getElementById('result').append(contains('x', '<ukljh;lojhhje') ? 'Yes x found</br>' : 'No x found</br>'); // false
-document.getElementById('result').append(contains('x', '<ukljh;xlojhhje') ? 'Yes x found</br>' : 'No x found</br>' );
+document.getElementById('result').append((document.createTextNode("Loaded")) + document.createElement("br"));
+document.getElementById('result').append(contains('x', '<ukljh;lojhhje') ? (document.createTextNode('Yes x found</br>')) + document.createElement("br") : (document.createTextNode('No x found</br>')) + document.createElement("br")); // false
+document.getElementById('result').append(contains('x', '<ukljh;xlojhhje') ? (document.createTextNode('Yes x found</br>')) + document.createElement("br") : (document.createTextNode'No x found</br>'()) + document.createElement("br"));
 })();
