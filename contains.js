@@ -14,6 +14,6 @@ const contains = (item, list, cb = x => { return x }) => {
     return cb(false);    
 };
 
-$('#result').append('Loaded');
-$('#result').append(contains('x', '<ukljh;lojhhje') ? 'Yes x found' : 'No x found'); // false
-$('#result').append(contains('x', '<ukljh;xlojhhje') ? 'Yes x found' : 'No x found' );
+document.getElementById('result').append('Loaded');
+document.getElementById('result').append(contains('x', '<ukljh;lojhhje') ? 'Yes x found' : 'No x found'); // false
+document.getElementById('result').append(contains('x', '<ukljh;xlojhhje') ? 'Yes x found' : 'No x found' );
