@@ -13,8 +13,8 @@ const contains = (item, list, cb = x => { return x }) => {
     /* since we have not return true must not be there */
     return cb(false);    
 };
-(fuction(){
-document.getElementById('result').append('Loaded<br/>');
-document.getElementById('result').append(contains('x', '<ukljh;lojhhje') ? 'Yes x found<br/>' : 'No x found<br/>'); // false
-document.getElementById('result').append(contains('x', '<ukljh;xlojhhje') ? 'Yes x found<br/>' : 'No x found<br/>' );
+(fuction() {
+document.getElementById('result').append('Loaded<br\>');
+document.getElementById('result').append(contains('x', '<ukljh;lojhhje') ? 'Yes x found<br\>' : 'No x found<br\>'); // false
+document.getElementById('result').append(contains('x', '<ukljh;xlojhhje') ? 'Yes x found<br\>' : 'No x found<br\>' );
 })();
