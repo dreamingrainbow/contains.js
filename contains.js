@@ -13,3 +13,5 @@ contains = (item, list, cb = x => { return x }) => {
     /* since we have not return true must not be there */
     return cb(false);    
 };
+contains('x', '<ukljh;lojhhje'); // false
+contains('x', '<ukljh;xlojhhje');
