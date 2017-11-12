@@ -14,7 +14,7 @@ const contains = (item, list, cb = x => { return x }) => {
     return cb(false);    
 };
 (() => {
-document.getElementById('result').append('Loaded<br\>');
+document.getElementById('result').append('Loaded</br>');
 document.getElementById('result').append(contains('x', '<ukljh;lojhhje') ? 'Yes x found</br>' : 'No x found</br>'); // false
 document.getElementById('result').append(contains('x', '<ukljh;xlojhhje') ? 'Yes x found</br>' : 'No x found</br>' );
 })();
