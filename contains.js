@@ -13,3 +13,4 @@ const contains = (item, list, cb = x => { return x }) => {
     /* since we have not return true must not be there */
     return cb(false);    
 };
+console.log('Loaded');
