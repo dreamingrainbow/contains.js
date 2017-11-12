@@ -5,10 +5,10 @@ This JavaScipt function returns true or false to the callback function. If the c
 Usage :
 ```JavaScript
 /* As a string */
-contains('x', '<ukljh;lojhhje');
-contains('x', '<ukljh;xlojhhje');
+contains('x', '<ukljh;lojhhje'); // false
+contains('x', '<ukljh;xlojhhje'); // true
 
 /* As an Array */
-contains('x', ['<ukljh;lojhhje'].split());
-contains('x', ['<ukljh;xlojhhje'].split());
+contains('x', ['<ukljh;lojhhje'].split()); // false
+contains('x', ['<ukljh;xlojhhje'].split()); // true
 ```
