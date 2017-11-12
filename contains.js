@@ -1,4 +1,4 @@
-contains = (item, list, cb = x => { return x }) => {
+const contains = (item, list, cb = x => { return x }) => {
 
     /* Start looping through the list */
     for (let i = 0; i < list.length; i++) {
